@@ -12,7 +12,7 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#products">Products</a></li>
+                <li><a href="#Our Products">Products</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -20,19 +20,53 @@
     <main>
         <section id="home">
             <h2>Welcome to Golden Crust Bakery</h2>
-            <p>Your one-stop shop for delicious baked goods.</p>
+            <p>Your one-stop shop for delicious baked goods where every bite feels like home.</p>
         </section>
         <section id="about">
             <h2>About Us</h2>
-            <p>Learn more about our bakery and our story.</p>
+            <p>Welcome to Golden Crust Bakery, where every loaf, pastry, and treat is crafted with love and 
+               a touch of tradition. From the moment you step inside, the comforting aroma of freshly baked 
+               bread and sweet confections fills the air, offering a taste of home in every bite. At Golden 
+               Crust, we believe that baking is an art, and each creation reflects our commitment to quality, 
+               authenticity, and community. Whether you're here for a cozy breakfast, an afternoon pick-me-up, 
+               or a special celebration, we invite you to experience the warmth and joy that only homemade 
+               baking can bring.</p>
         </section>
         <section id="products">
             <h2>Our Products</h2>
             <p>Discover our wide range of baked goods.</p>
+            <ul>
+                <li>Breads</li>
+                <li>Pastries</li>
+                <li>Cakes</li>
+                <li>Cookies</li>
+                <li>Pies</li>
+            </ul>
         </section>
         <section id="contact">
             <h2>Contact Us</h2>
-            <p>Get in touch with us for orders and inquiries.</p>
+            <p>If you have any questions, feedback, or special requests, we’d love to hear from you. Please fill out the form below, and we’ll get back to you as soon as possible.</p>
+            
+            <form action="/submit-form" method="post">
+              <label for="name">Full Name:</label><br>
+              <input type="text" id="name" name="name" required><br><br>
+            
+              <label for="email">Email Address:</label><br>
+              <input type="email" id="email" name="email" required><br><br>
+            
+              <label for="subject">Subject:</label><br>
+              <input type="text" id="subject" name="subject"><br><br>
+            
+              <label for="message">Message:</label><br>
+              <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+            
+              <label for="newsletter">
+                <input type="checkbox" id="newsletter" name="newsletter">
+                Subscribe to our newsletter
+              </label><br><br>
+            
+              <input type="submit" value="Submit">
+            </form>    
         </section>
     </main>
     <footer>
