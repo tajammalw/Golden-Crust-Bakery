@@ -1,0 +1,58 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;   
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fff7e1;
+    }
+  
+    /* Responsive and centered banner section */
+    #home {
+      display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 1.25rem;
+        background-color: #e8c8bd;
+        color: #4e720f;               
+    }
+    
+    #home img {
+      border-radius: 0.625rem;  
+      margin-top: 4.375rem;      
+    }
+  
+    #home h1 {
+      font-size: 2.0rem;
+      margin-bottom: 0.625rem;
+    }
+    
+    /* Navbar Styling */
+    #navbar {
+      position: fixed;
+      background-color: #b85d3b; 
+      top: 0;
+      padding: 0.625rem 1.25rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      z-index: 100;              
+    }
+  
+    #navbar a {
+      color: #fff7e1;
+      text-decoration: none;
+      padding: 0.625rem 0.9375rem;
+      font-size: 1.125rem;
+      font-weight: bold;
+      transition: color 0.3s ease;
+      
+    }   
+      
+    #navbar a:hover {
+      color: offwhite;
+      background-color:#f4a950;
+    }      
