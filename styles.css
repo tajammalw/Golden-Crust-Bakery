@@ -206,5 +206,52 @@ body {
   transform: scale(1.1); /* Slightly enlarges the image on hover */
 }
 
+/* Media Queries for Responsiveness */
+
+/* Tablet: 768px and below */
+
+@media (max-width: 768px) {
+  #navbar {
+    flex-direction: column;
+  }
+
+  #products img {
+    width: 15rem; 
+    height: 15rem;
+  }  
+}
+
+/* Mobile: 480px and below */
+@media (max-width: 480px) {
+  #navbar a {
+    font-size: 1rem; 
+    padding: 0.5rem; /* Smaller padding for mobile */
+    box-sizing: border-box;
+  }
+
+  #home img {
+    width: 90%;
+    margin-top: 1.25rem; 
+    box-sizing: border-box;
+  }
+
+  #products img {
+    width: 10rem; 
+    height: 10rem;
+    box-sizing: border-box;
+  }
+
+  #btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+
+  #newsletter {
+    margin-left: 0;
+  }
+}
+
+
 
     
