@@ -177,33 +177,45 @@
         </ul>
       </section>
 
-        <!-- Contact Us Section -->
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>If you have any questions, feedback, or special requests, we’d love to hear from you. Please fill out the
-                form below, and we’ll get back to you as soon as possible.</p>
+      <!-- Contact Us Section -->
+      <section id="contact">
+        <h2 class="header">Contact Us</h2>
+        <p>
+          If you have any questions, feedback, or special requests, we’d love to
+          hear from you. Please fill out the form below, and we’ll get back to
+          you as soon as possible.
+        </p>
 
-            <form action="/submit-form" method="post">
-                <label for="name">Full Name:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
+        <form action="/submit-form" method="post">
+          <label for="name" class="lbl">Full Name:</label><br />
+          <input type="text" id="name" name="name" required /><br /><br />
 
-                <label for="email">Email Address:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
+          <label for="email" class="lbl">Email Address:</label><br />
+          <input type="email" id="email" name="email" required /><br /><br />
 
-                <label for="subject">Subject:</label><br>
-                <input type="text" id="subject" name="subject"><br><br>
+          <label for="subject" class="lbl">Subject:</label><br />
+          <input type="text" id="subject" name="subject" /><br /><br />
 
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+          <label for="message" class="lbl">Message:</label><br />
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            cols="50"
+            required
+          ></textarea
+          ><br /><br />
 
-                <label for="newsletter">
-                    <input type="checkbox" id="newsletter" name="newsletter">
-                    Subscribe to our newsletter
-                </label><br><br>
+          <label for="newsletter">
+            <input type="checkbox" id="newsletter" name="newsletter" />
+            <strong>Subscribe to our newsletter</strong> </label
+          ><br /><br />
 
-                <input type="submit" value="Submit">
-            </form>
-        </section>
+          <input id="btn" type="submit" value="Submit" />
+        </form>
+      </section>
+    </main>
+
     </main>
 
     <!-- Footer Section -->
