@@ -174,4 +174,37 @@ body {
   margin-left: 1.25rem;    
 }
 
+/* Footer Section Styling */
+#footer {
+  padding: 0.625rem;
+  background-color: #b85d3b; 
+  color: #fff7e1; 
+  text-align: center;
+} 
+
+#footer .footer-socialmedia ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; 
+  gap: 1.25rem; /* Space between icons */
+}
+
+#footer .footer-socialmedia ul li {
+  display: inline-block;
+}
+
+.footer-icon {
+  width: 2.5rem; 
+  height: 2.5rem; 
+  border-radius: 0.625rem; 
+  transition: transform 0.3s ease;      
+}
+
+.footer-icon:hover {
+  transform: scale(1.1); /* Slightly enlarges the image on hover */
+}
+
+
     
