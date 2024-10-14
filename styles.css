@@ -107,4 +107,31 @@ body {
     margin-bottom: 10px;
     color:#4e720f;
   }
+
+  /* Location Section Styling */
+#location {    
+  color: #4e720f;
+  text-align:left;
+  padding: 1.25rem;
+  margin-left: 1.25rem;
+  margin-top: -1.75rem;
+}
+
+#location .header {
+  text-align: left;
+}
+
+/* Hours Section Styling */
+#hours {
+  color: #4e720f;
+  text-align:left;
+  padding: 1.25rem;
+  margin-top: -3.75rem; 
+  margin-left: 1.5rem;
+}
+
+#hours .header {
+  text-align: left;
+}
+  
     
