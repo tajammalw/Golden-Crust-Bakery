@@ -90,7 +90,7 @@ body {
   }  
   
   #about, #products {
-    padding-top: 40px;
+    padding-top: 20px;
   }
     
   .grid-container {
@@ -189,7 +189,7 @@ body {
 }
 
 #btn {
-  background-color: #b85d3b;
+  background-color: #f07345;
   color: #fff7e1;
   padding: 0.625rem 1.25rem;
   border: none;
@@ -216,7 +216,7 @@ body {
 /* Footer Section Styling */
 #footer {
   padding: 0.625rem;
-  background-color: #b85d3b; 
+  background-color: #f07345; 
   color: #fff7e1; 
   text-align: center;
   box-sizing: border-box;
