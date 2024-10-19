@@ -16,7 +16,7 @@ body {
     text-align: center;
     padding: 1.25rem;
     background-color: #f6ddd5;
-    color: #4e720f;  
+    color: #b85d3b;  
     box-sizing: border-box;             
 }    
 #home img {
@@ -69,7 +69,7 @@ body {
 }      
   
 .sub-header {
-    color: #4e720f;
+    color: #444;
     text-align: center;
     margin-top: 0.625rem; 
     box-sizing: border-box;   
@@ -137,13 +137,13 @@ body {
     
   .list li {
     margin-bottom: 0.625rem;
-    color:#4e720f;
+    color:#444;
     box-sizing: border-box;
   }
 
 /* Location Section Styling */
 #location {    
-  color: #4e720f;
+  color: #444;
   text-align:left;
   padding: 1.25rem;
   margin-left: 1.25rem;
@@ -157,7 +157,7 @@ body {
 
 /* Hours Section Styling */
 #hours {
-  color: #4e720f;
+  color: #444;
   text-align:left;
   padding: 1.25rem;
   margin-top: -3.75rem; 
@@ -171,7 +171,7 @@ body {
 
 /* Contact US Section Styling */
 #contact {
-  color: #4e720f;
+  color: #444;
   text-align:left;
   padding: 0.625rem;
   margin-top: -3.75rem;
