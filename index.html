@@ -15,71 +15,44 @@
 <body>
 
   <!-- added a navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Byte-Scream</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#products">Products</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
+  <header>
+    <nav class="navbar navbar fixed-top navbar-expand-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><h1>Golden Crust</h1></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#location">Location</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hours">Hours</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+  <!-- Add a Hero Section -->
+  <section id="home">
+      <div class="container mt-5">
+          <div class="jumbotron text-center p-5 rounded">
+              <img src="/assets/images/pexels-orlovamaria-4916189.jpg" alt="Front View of Golden Crust Bakery"/><br><br><br>
+              <h2 class="header">Welcome to Golden Crust Bakery</h2>
+              <p>Your one-stop shop for delicious baked goods where every bite feels like home</p>
+          </div>
       </div>
-    </div>
-  </nav>
-
+  </section>
   
-    <!-- Header -->
-    <header>
-        <section id="home">
-          <img
-            src="/assets/images/pexels-orlovamaria-4916189.jpg"
-            alt="Front View of Golden Crust Bakery"/>
-          <h1>Welcome to Golden Crust Bakery</h1>
-          <h3>
-            Your one-stop shop for delicious baked goods where every bite feels
-            like home.
-          </h3>
-        </section>
-  
-        <section id="nav">
-          <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#products">Products</a>
-            <a href="#location">Location</a>
-            <a href="#hours">Hours</a>
-            <a href="#contact">Contact Us</a>
-          </nav>
-        </section>
-      </header>
-
-    <!-- Main Content -->
-    <main>
-        <!-- About Us section -->
-        <section id="about">
-        <h2 class="header">About Us</h2>
-        <p class="sub-header">
+  <!-- Added about section -->
+  <section id="about">
+      <h2 class="header">About Us</h2>
+      <p class="sub-header">
           At Golden Crust Bakery, we believe that great things come from small
           beginnings. What started as a humble kitchen venture fueled by a love
           for baking has blossomed into a growing community favorite. From day
@@ -103,24 +76,41 @@
           in the tradition and warmth that have been at the heart of Golden
           Crust Bakery since the beginning.
         </p>
-      </section>
+  </section>
 
-        <!-- Products Section -->
-      <section id="products">
-        <h2 class="header">Products Gallery</h2>
-        <p class="sub-header">Discover our wide range of baked goods</p>
+  <!-- Added products section -->
+  <section id="products">
+      <div class="container my-5" style="color: #b85d3b; background-color: #fff7e1;">
+          <h2 class="text-center mb-4">Products Gallery</h2>
+          <p class="text-center">Discover our wide range of baked goods</p>
+          <div class="row">
+              <div class="col-md-3">
+                  <div class="card">
+                      <img src="/assets/images/pexels-askar-abayev-6189922.jpg" class="card-img-top" alt="Product picture" width="200" height="300"/>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="card">
+                      <img src="/assets/images/pexels-karolina-grabowska-4197910.jpg" class="card-img-top" alt="Product picture" width="200" height="300"/>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="card">
+                      <img src="/assets/images/pexels-shvets-production-7525182.jpg" class="card-img-top" alt="Strawberry Script" width="200" height="300"/>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="card">
+                      <img src="/assets/images/pexels-tahaasamett-14565958.jpg" class="card-img-top" alt="Strawberry Script" width="200" height="300"/>
+                  </div>
+              </div>
+          </div>
+      </div>
 
-        <!-- Created a grid-container for Products Gallery -->
-        <div class="grid-container">
-          <div class="box box1"><img src="/assets/images/pexels-askar-abayev-6189922.jpg" alt="Product picture"></div>
-          <div class="box box2"><img src="/assets/images/pexels-karolina-grabowska-4197910.jpg" alt="Product picture"></div>
-          <div class="box box3"><img src="/assets/images/pexels-shvets-production-7525182.jpg" alt="Product picture"></div>
-          <div class="box box4"><img src="/assets/images/pexels-tahaasamett-14565958.jpg" alt="Product picture"></div>      
-        </div>  
-        
-        <!-- Products Listings -->
-        <ul>
-          <li><h3 class="header">Breads</h3> 
+      <h2 class="header">Our Products</h2>
+      <ul>
+          <li>
+              <h3 class="header">Breads</h3>
               <ul class="list">
                   <li>Artisan Loaves (sourdough, multigrain, whole wheat)</li>
                   <li>Baguettes</li>
@@ -128,7 +118,9 @@
                   <li>Focaccia</li>
                   <li>Bagels (variety of flavors like plain, sesame, and everything)</li>
               </ul>
-          <li><h3 class="header">Pastries</h3> 
+          </li>
+          <li>
+              <h3 class="header">Pastries</h3>
               <ul class="list">
                   <li>Croissants (butter, almond, chocolate)</li>
                   <li>Danishes (fruit-filled, cream cheese)</li>
@@ -137,14 +129,16 @@
                   <li>Turnovers (apple, cherry)</li>
               </ul>
           </li>
-          <li><h3 class="header">Cakes & Cupcakes</h3>
+          <li>
+              <h3 class="header">Cakes & Cupcakes</h3>
               <ul class="list">
                   <li>Classic Cakes (chocolate, vanilla, carrot, red velvet)</li>
                   <li>Cupcakes (flavors like vanilla, chocolate, red velvet, lemon)</li>
                   <li>Cheesecakes (classic, fruit-topped)</li>
-              </ul> 
+              </ul>
           </li>
-          <li><h3 class="header">Cookies</h3> 
+          <li>
+              <h3 class="header">Cookies</h3>
               <ul class="list">
                   <li>Chocolate Chip Cookies</li>
                   <li>Oatmeal Raisin Cookies</li>
@@ -153,22 +147,25 @@
                   <li>Shortbread</li>
               </ul>
           </li>
-          <li><h3 class="header">Savory Items</h3> 
+          <li>
+              <h3 class="header">Savory Items</h3>
               <ul class="list">
                   <li>Quiche (ham & cheese, spinach & feta)</li>
-                  <li>Savory Scones (cheese, herb)</li> 
-                  <li>Puff Pastry Bites (stuffed with cheese, spinach, or meat)</li> 
-                  <li>Sandwiches (made with bakery bread like baguettes or ciabatta)</li>                            
+                  <li>Savory Scones (cheese, herb)</li>
+                  <li>Puff Pastry Bites (stuffed with cheese, spinach, or meat)</li>
+                  <li>Sandwiches (made with bakery bread like baguettes or ciabatta)</li>
               </ul>
           </li>
-          <li><h3 class="header">Pies & Tarts</h3> 
+          <li>
+              <h3 class="header">Pies & Tarts</h3>
               <ul class="list">
                   <li>Fruit Pies (apple, cherry, peach)</li>
                   <li>Cream Pies (chocolate, banana cream)</li>
                   <li>Tarts (lemon, fruit, custard)</li>
-              </ul> 
+              </ul>
           </li>
-          <li><h3 class="header">Specialty Items</h3>
+          <li>
+              <h3 class="header">Specialty Items</h3>
               <ul class="list">
                   <li>Eclairs</li>
                   <li>Muffins (blueberry, banana nut, chocolate)</li>
@@ -176,26 +173,31 @@
                   <li>Gluten-Free or Vegan Options (cakes, cookies, bread)</li>
               </ul>
           </li>
-          <li><h3 class="header">Beverages</h3> 
+          <li>
+              <h3 class="header">Beverages</h3>
               <ul class="list">
                   <li>Coffee & Espresso (cappuccino, latte, cold brew)</li>
                   <li>Tea (herbal, black, green)</li>
                   <li>Hot Chocolate</li>
               </ul>
           </li>
-        </ul>
-      </section>
-      
-      <!-- Location Section -->
-      <section id="location">
-        <h2 class="header">Location</h2>
-        <p>2115 Wonderland Street, Dream Blvd, Phoenix AZ 34576</p>
-      </section>
+      </ul>
+  </section>
 
-      <!-- Hours Section -->
-      <section id="hours">
-        <h2 class="header">Hours</h2>
-        <ul class="list">
+  <!-- Added location section -->
+  <section id="location">
+      <h2 class="header">Location</h2>
+      <address>
+          2115 Wonderland Street,<br>
+          Dream Blvd, Phoenix AZ 34576<br>
+          Phone: xxx-xxx-xxxx
+      </address>
+  </section>
+
+  <!-- Added hours section -->
+  <section id="hours">
+      <h2 class="header">Hours</h2>
+      <ul class="list">
           <li><b>Monday:</b> 10am - 7pm</li>
           <li><b>Tuesday:</b> 10am - 7pm</li>
           <li><b>Wednesday:</b> 10am - 7pm</li>
@@ -203,49 +205,32 @@
           <li><b>Friday:</b> 10am - 9pm</li>
           <li><b>Saturday:</b> 12pm - 11pm</li>
           <li><b>Sunday:</b> 12pm - 11pm</li>
-        </ul>
-      </section>
+      </ul>
+  </section>
 
-      <!-- Contact Us Section -->
-      <section id="contact">
-        <h2 class="header">Contact Us</h2>
-        <p>
-          If you have any questions, feedback, or special requests, we’d love to
-          hear from you. Please fill out the form below, and we’ll get back to
-          you as soon as possible.
-        </p>
-
-        <form action="/submit-form" method="post">
-          <label for="name" class="lbl">Full Name:</label><br />
-          <input type="text" id="name" name="name" required /><br /><br />
-
-          <label for="email" class="lbl">Email Address:</label><br />
-          <input type="email" id="email" name="email" required /><br /><br />
-
-          <label for="subject" class="lbl">Subject:</label><br />
-          <input type="text" id="subject" name="subject" /><br /><br />
-
-          <label for="message" class="lbl">Message:</label><br />
-          <textarea
-            id="message"
-            name="message"
-            rows="4"
-            cols="50"
-            required
-          ></textarea
-          ><br /><br />
-
+  <!-- Added contact section -->
+  <section id="contact">
+      <h2 class="header">Contact Us</h2>
+      <p>If you have any questions, feedback, or special requests, we’d love to hear from you. Please fill out the form below, and we’ll get back to you as soon as possible.</p>
+      <form action="/submit-form" method="post">
+          <label for="name" class="lbl">Full Name:</label><br>
+          <input type="text" id="name" name="name" required/><br><br>
+          <label for="email" class="lbl">Email Address:</label><br>
+          <input type="email" id="email" name="email" required/><br><br>
+          <label for="subject" class="lbl">Subject:</label><br>
+          <input type="text" id="subject" name="subject" /><br/><br>
+          <label for="message" class="lbl">Message:</label><br>
+          <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
           <label for="newsletter">
-            <input type="checkbox" id="newsletter" name="newsletter" />
-            <strong>Subscribe to our newsletter</strong> </label
-          ><br /><br />
-
+              <input type="checkbox" id="newsletter" name="newsletter"/>
+              <strong>Subscribe to our newsletter</strong>
+          </label><br><br>
           <input id="btn" type="submit" value="Submit" />
-        </form>
-      </section>
-    </main>
+      </form>
+  </section>
+</main>
 
-    <!-- Footer Section  -->
+    <!-- Added Footer-->
     <section id="footer">
       <!-- <h3>Social Media Icons</h3>     -->
       <div class="footer-socialmedia">
