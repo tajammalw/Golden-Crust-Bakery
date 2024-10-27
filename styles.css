@@ -1,157 +1,118 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;   
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #fff7e1;
+  font-family: Arial, sans-serif;   
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #fff7e1;
 }
-  
-/* Responsive and centered banner section */
+
 #home {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 1.25rem;
-    background-color: #f6ddd5;
-    color: #b85d3b;  
-    box-sizing: border-box;             
-}    
+  background-color: #f6ddd5;
+  color: #b85d3b;     
+}  
 #home img {
-    border-radius: 0.625rem;  
-    margin-top: 4.375rem; 
-    width: 50%;
-    height: 70vh;
-    box-sizing: border-box;     
-}  
-#home h1 {
-    font-size: 2.0rem;
-    margin-bottom: 0.625rem;
-    box-sizing: border-box; 
+  border-radius: 0.625rem;  
+  width: 75%;
+  height: 70vh;   
+} 
+
+#home .header {
+  font-size: 2.0rem;
+  margin-bottom: 0.625rem;
+  box-sizing: border-box; 
 }
-    
+
 /* Navbar Styling */
-#nav {
-    position: fixed;
-    width: 100%;
-    background-color: #f07345; 
-    top: 0;
-    padding: 0.625rem 1.25rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    z-index: 999;  
-    box-sizing: border-box;             
+header .navbar {
+  background-color: rgb(245, 154, 154);
+  padding: 0.25rem 0.25rem;
+  box-sizing: border-box;
 }
-  
-#nav a {
-    color: #fff7e1;
-    text-decoration: none;
-    padding: 0.625rem 0.9375rem;
-    font-size: 1.125rem;
-    font-weight:100;
-    transition: color 0.3s ease; 
-    box-sizing: border-box;      
-}   
-      
-#nav a:hover {
-    color: #f8f8f8;
-    background-color:#f4a950;
+.navbar-brand {
+  color: blueviolet;
+  font-weight: bold;
+}
+
+.nav-item a {
+  color: #b85d3b;
 } 
-    
-/* Main Section Styling */
+.navbar button {
+  background-color: rgb(245, 154, 154);
+}
+
 .header {
-    text-align: center;
-    color: #b85d3b;
-    margin-top: 1.875rem;
-    box-sizing: border-box;
+  text-align: center;
+  color: #b85d3b;
+  margin-top: 1.875rem;
+  box-sizing: border-box;
 }      
-  
+
 .sub-header {
-    color: #444;
-    text-align: center;
-    margin-top: 0.625rem; 
-    box-sizing: border-box;   
+  color: #444;
+  text-align: center;
+  margin-top: 50px;
+  /*margin-top: 0.625rem; */
+  box-sizing: border-box;   
 } 
 
-/* About Section Styling*/
 #about .sub-header {
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
-    box-sizing: border-box;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  box-sizing: border-box;
+}
+#about p {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
 }
 
-/* Products Section Styling*/  
+/* Products Section Styling */
 #products {        
-    justify-content: center;
-    align-items: center;
-    text-align: center;    
-  }  
-  
-  #about, #products {
-    padding-top: 20px;
-  }
-
-  /* Grid Container Styling */  
-  .grid-container {
-    display: grid; /* This defines a grid container */
-    grid-template-columns: repeat(4, 300px); /* Creates four columns with 300px width each */
-    gap: 20px; /* Adds a 10px gap between grid items */
-    padding: 10px;
-    box-sizing: border-box;
-    justify-content: center; /* Centers the grid items horizontally */
-  }
-  
-  .box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-align: center;
-    
-  }
-
-  /*Products Images Styling */
-  #products img {
-    width: 100%;
-    height: 30vh;
-    margin:  0 0.625rem;
-    border-radius: 0.3125rem; 
-    transition: transform 0.3s ease;
-    box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  text-align: center;    
 }  
-  #products img:hover {
-    transform: scale(1.1);
-  }
-  #products ul {
-    list-style-type: none;
-    padding: 0;
-  }
+
+#about, #products {
+  padding-top: 2.1875rem;
+  box-sizing: border-box;
+}
+
+/* Products Images Styling */
+.card img {
+  transition: transform 0.3s ease;
+  box-sizing: border-box;
+}  
+.card img:hover {
+  transform: scale(1.1);
+}
+#products ul {
+  background-color: #fff7e1;
+  list-style-type: none;
+  padding: 0;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0; 
+  font-size: 1.0rem; 
+}
   
-  .list {
-    list-style-type: none;
-    padding: 0; 
-    font-size: 1.0rem; 
-  }
-    
-  .list li {
-    margin-bottom: 0.625rem;
-    color:#444;
-    box-sizing: border-box;
-  }
+.list li {
+  margin-bottom: 0.625rem;
+  color: #444;
+  box-sizing: border-box;
+}
 
 /* Location Section Styling */
 #location {    
   color: #444;
-  text-align:left;
-  padding: 1.25rem;
+  text-align: left;
+  padding: 2.25rem;
   margin-left: 1.25rem;
-  margin-top: -1.75rem;
+  margin-top: 1.75rem;
   box-sizing: border-box;
 }
 
@@ -162,9 +123,8 @@ body {
 /* Hours Section Styling */
 #hours {
   color: #444;
-  text-align:left;
-  padding: 1.25rem;
-  margin-top: -3.75rem; 
+  text-align: left;
+  padding: 2.25rem;
   margin-left: 1.5rem;
   box-sizing: border-box;
 }
@@ -173,12 +133,11 @@ body {
   text-align: left;
 }
 
-/* Contact US Section Styling */
+/* Contact Us Section Styling */
 #contact {
   color: #444;
-  text-align:left;
-  padding: 0.625rem;
-  margin-top: -3.75rem;
+  text-align: left;
+  padding: 2.25rem;
   margin-left: 1.25rem;
   box-sizing: border-box;
 }
@@ -207,38 +166,19 @@ body {
 }
 
 #btn:hover {
-  background-color: #f4a950;
-  box-shadow: 0 4px 6px rgba(14, 13, 13, 0.2);
+  color: blueviolet;
+  box-shadow: 0 4px 6px rgba(110, 203, 4, 0.7);
+  font-weight: bold;
 }
 
-
-#newsletter{
+#newsletter {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
   margin-left: 1.25rem;  
   box-sizing: border-box;  
 }
 
-/* Footer Section Styling */
-#footer {
-  padding: 0.625rem;
-  background-color: #f07345; 
-  color: #fff7e1; 
-  text-align: center;
-  box-sizing: border-box;
-} 
-
-#footer .footer-socialmedia ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center; 
-  gap: 1.25rem; /* Space between icons */
-  box-sizing: border-box;
-}
-
-#footer .footer-socialmedia ul li {
+.footer-socialmedia ul li {
   display: inline-block;
 }
 
