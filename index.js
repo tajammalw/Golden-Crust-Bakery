@@ -170,6 +170,71 @@ console.log(`\nThe store location is ${storeLocation}.`);
 console.log(`\nThe store hours are ${storeHours}.`); 
 
 
+//aisd-jse-on-the-job-2
+console.log(`\n\naisd-jse-on-the-job-2`);
+// Build arrays from the product and price variables:
+let breads = ["Artisan Loaves", "Baguettes", "Ciabatta", "Focaccia", "Bagels"];
+let pastries = ["Croissants", "Danishes", "Scones", "Cinnamon Rolls", "Turnovers"];
+let cakesCupcakes = ["Classic Cakes", "Cupcakes", "Cheesecakes"];
+let cookies = ["Chocolate Chip Cookies", "Oatmeal Raisin Cookies", "Sugar Cookies", "Macarons", "Shortbread"];
+let savoryItems = ["Quiches", "Savory Scones", "Puff Pastry Bites", "Sandwiches"];
+let piesTarts = ["Fruit Pies", "Cream Pies", "Tarts"];
+let specialityItems = ["Eclairs", "Muffins", "Brioche", "Gluten-Free or Vegan Options"];
+let beverages = ["Coffee & Espresso", "Tea", "Hot Chocolate"];
+
+let prices = ["$5.00", "$3.00", "$4.00", "$4.50", "$1.50", "$3.00", "$3.50", "$2.75", "$3.25", "$3.00", "$25.00", "$2.50", "$30.00", "$1.50", "$1.50", "$1.50", "$2.00", "$1.75", "$4.00", "$2.75", "$3.50", "$7.00", "$15.00", "$16.00", "$14.00", "$3.00", "$2.75", "$3.25", "$5.00", "$3.00", "$2.50", "$3.00"];
+
+// Display the products & the Prices:
+console.log(`\n${productCategory1}:
+    ${breads[0]} - ${prices[0]}  
+    ${breads[1]} - ${prices[1]}
+    ${breads[2]} - ${prices[2]}
+    ${breads[3]} - ${prices[3]}
+    ${breads[4]} - ${prices[4]}`);
+
+console.log(`\n${productCategory2}:
+    ${pastries[0]} - ${prices[5]}
+    ${pastries[1]} - ${prices[6]}
+    ${pastries[2]} - ${prices[7]}
+    ${pastries[3]} - ${prices[8]}
+    ${pastries[4]} - ${prices[9]}`);
+
+console.log(`\n${productCategory3}:
+    ${cakesCupcakes[0]} - ${prices[10]}
+    ${cakesCupcakes[1]} - ${prices[11]}
+    ${cakesCupcakes[2]} - ${prices[12]}`);
+
+console.log(`\n${productCategory4}:
+    ${cookies[0]} - ${prices[13]}
+    ${cookies[1]} - ${prices[14]}
+    ${cookies[2]} - ${prices[15]}
+    ${cookies[3]} - ${prices[16]}
+    ${cookies[4]} - ${prices[17]}`);
+
+console.log(`\n${productCategory5}:
+    ${savoryItems[0]} - ${prices[18]}
+    ${savoryItems[1]} - ${prices[19]}
+    ${savoryItems[2]} - ${prices[20]}
+    ${savoryItems[3]} - ${prices[21]}`);
+
+console.log(`\n${productCategory6}:
+    ${piesTarts[0]} - ${prices[22]}
+    ${piesTarts[1]} - ${prices[23]}
+    ${piesTarts[2]} - ${prices[24]}`);
+
+console.log(`\n${productCategory7}:
+    ${specialityItems[0]} - ${prices[25]}
+    ${specialityItems[1]} - ${prices[26]}
+    ${specialityItems[2]} - ${prices[27]}
+    ${specialityItems[3]} - ${prices[28]}`);
+
+console.log(`\n${productCategory8}:
+    ${beverages[0]} - ${prices[29]}
+    ${beverages[1]} - ${prices[30]}
+    ${beverages[2]} - ${prices[31]}`);
+    
+
+
 
 
 
