@@ -233,6 +233,13 @@ console.log(`\n${productCategory8}:
     ${beverages[1]} - ${prices[30]}
     ${beverages[2]} - ${prices[31]}`);
     
+//Using the push method to add a new product to your store.
+beverages.push("Lemonade");
+prices.push("$2.50");  
+
+// Displaying the new product and price:
+console.log(`\nAdded a new product in ${productCategory8}:
+  ${beverages[3]} - ${prices[32]}`);
 
 
 
