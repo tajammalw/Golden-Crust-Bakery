@@ -7,7 +7,7 @@ const storeName = "Golden-Crust-Bakery";
 // Store Type
 const storeType = "Bakery";
 
-// Display the Store Name and Store Type
+// Displaying the Store Name and Store Type
 console.log(`\nThe store name is ${storeName}.`);
 
 console.log(`\nThe store type is ${storeType}.`);
@@ -19,7 +19,7 @@ const storeLocation = "2115 Wonderland Street, Dream Blvd, Phoenix AZ 34576";
 const storeHours = "Monday - Friday: 9 AM - 6 PM, Saturday: 10 AM - 4 PM, Sunday: Closed";
 
 
-// Store Products: 
+// Store Products - showing categories and items under each category: 
 const productCategory1 = "Breads";
 const product1 = "Artisan Loaves";
 const product2 = "Baguettes";
@@ -118,7 +118,7 @@ const price31 = "$2.50";
 const price32 = "$3.00"; 
 
 
-// Display the Products and Prices
+// Displaying the Products and Prices
 console.log(`\nThe product category is ${productCategory1}:`);
 console.log(`The productName is ${product1}, and it's price is ${price1}.`);
 console.log(`The productName is ${product2}, and it's price is ${price2}.`);
@@ -172,7 +172,7 @@ console.log(`\nThe store hours are ${storeHours}.`);
 
 //aisd-jse-on-the-job-2
 console.log(`\n\naisd-jse-on-the-job-2`);
-// Build arrays from the product and price variables:
+// Building arrays from the product and price variables:
 let breads = ["Artisan Loaves", "Baguettes", "Ciabatta", "Focaccia", "Bagels"];
 let pastries = ["Croissants", "Danishes", "Scones", "Cinnamon Rolls", "Turnovers"];
 let cakesCupcakes = ["Classic Cakes", "Cupcakes", "Cheesecakes"];
@@ -184,7 +184,7 @@ let beverages = ["Coffee & Espresso", "Tea", "Hot Chocolate"];
 
 let prices = ["$5.00", "$3.00", "$4.00", "$4.50", "$1.50", "$3.00", "$3.50", "$2.75", "$3.25", "$3.00", "$25.00", "$2.50", "$30.00", "$1.50", "$1.50", "$1.50", "$2.00", "$1.75", "$4.00", "$2.75", "$3.50", "$7.00", "$15.00", "$16.00", "$14.00", "$3.00", "$2.75", "$3.25", "$5.00", "$3.00", "$2.50", "$3.00"];
 
-// Display the products & the Prices:
+// Displaying the products & the Prices:
 console.log(`\n${productCategory1}:
     ${breads[0]} - ${prices[0]}  
     ${breads[1]} - ${prices[1]}
