@@ -174,72 +174,95 @@ console.log(`\nThe store hours are ${storeHours}.`);
 console.log(`\n\naisd-jse-on-the-job-2`);
 // Building arrays from the product and price variables:
 let breads = ["Artisan Loaves", "Baguettes", "Ciabatta", "Focaccia", "Bagels"];
+let breadsPrices = ["$5.00", "$3.00", "$4.00", "$4.50", "$1.50"];
 let pastries = ["Croissants", "Danishes", "Scones", "Cinnamon Rolls", "Turnovers"];
+let pastriesPrices = ["$3.00", "$3.50", "$2.75", "$3.25", "$3.00"];
 let cakesCupcakes = ["Classic Cakes", "Cupcakes", "Cheesecakes"];
+let cakesCupcakesPrices = ["$25.00", "$2.50", "$30.00"];
 let cookies = ["Chocolate Chip Cookies", "Oatmeal Raisin Cookies", "Sugar Cookies", "Macarons", "Shortbread"];
+let cookiesPrices = ["$1.50", "$1.50", "$1.50", "$1.50", "$2.00"];
 let savoryItems = ["Quiches", "Savory Scones", "Puff Pastry Bites", "Sandwiches"];
+let savoryItemsPrices = ["$4.00", "$2.75", "$3.50", "$7.00"];
 let piesTarts = ["Fruit Pies", "Cream Pies", "Tarts"];
+let piesTartsPrices = ["$15.00", "$16.00", "$14.00"];
 let specialityItems = ["Eclairs", "Muffins", "Brioche", "Gluten-Free or Vegan Options"];
+let specialityItemsPrices = ["$3.00", "$2.75", "$3.25", "$5.00"];
 let beverages = ["Coffee & Espresso", "Tea", "Hot Chocolate"];
+let beveragesPrices = ["$3.00", "$2.50", "$3.00"];
 
-let prices = ["$5.00", "$3.00", "$4.00", "$4.50", "$1.50", "$3.00", "$3.50", "$2.75", "$3.25", "$3.00", "$25.00", "$2.50", "$30.00", "$1.50", "$1.50", "$1.50", "$2.00", "$1.75", "$4.00", "$2.75", "$3.50", "$7.00", "$15.00", "$16.00", "$14.00", "$3.00", "$2.75", "$3.25", "$5.00", "$3.00", "$2.50", "$3.00"];
 
-// Displaying the products & the Prices:
+// Display the products & the Prices Lists:
 console.log(`\n${productCategory1}:
-    ${breads[0]} - ${prices[0]}  
-    ${breads[1]} - ${prices[1]}
-    ${breads[2]} - ${prices[2]}
-    ${breads[3]} - ${prices[3]}
-    ${breads[4]} - ${prices[4]}`);
+    ${breads[0]} - ${breadsPrices[0]}  
+    ${breads[1]} - ${breadsPrices[1]}
+    ${breads[2]} - ${breadsPrices[2]}
+    ${breads[3]} - ${breadsPrices[3]}
+    ${breads[4]} - ${breadsPrices[4]}`);
 
 console.log(`\n${productCategory2}:
-    ${pastries[0]} - ${prices[5]}
-    ${pastries[1]} - ${prices[6]}
-    ${pastries[2]} - ${prices[7]}
-    ${pastries[3]} - ${prices[8]}
-    ${pastries[4]} - ${prices[9]}`);
+    ${pastries[0]} - ${pastriesPrices[0]}
+    ${pastries[1]} - ${pastriesPrices[1]}
+    ${pastries[2]} - ${pastriesPrices[2]}
+    ${pastries[3]} - ${pastriesPrices[3]}
+    ${pastries[4]} - ${pastriesPrices[4]}`);
 
 console.log(`\n${productCategory3}:
-    ${cakesCupcakes[0]} - ${prices[10]}
-    ${cakesCupcakes[1]} - ${prices[11]}
-    ${cakesCupcakes[2]} - ${prices[12]}`);
+    ${cakesCupcakes[0]} - ${cakesCupcakesPrices[0]}
+    ${cakesCupcakes[1]} - ${cakesCupcakesPrices[1]}
+    ${cakesCupcakes[2]} - ${cakesCupcakesPrices[2]}`);
 
 console.log(`\n${productCategory4}:
-    ${cookies[0]} - ${prices[13]}
-    ${cookies[1]} - ${prices[14]}
-    ${cookies[2]} - ${prices[15]}
-    ${cookies[3]} - ${prices[16]}
-    ${cookies[4]} - ${prices[17]}`);
+    ${cookies[0]} - ${cookiesPrices[0]}
+    ${cookies[1]} - ${cookiesPrices[1]}
+    ${cookies[2]} - ${cookiesPrices[2]}
+    ${cookies[3]} - ${cookiesPrices[3]}
+    ${cookies[4]} - ${cookiesPrices[4]}`);
 
 console.log(`\n${productCategory5}:
-    ${savoryItems[0]} - ${prices[18]}
-    ${savoryItems[1]} - ${prices[19]}
-    ${savoryItems[2]} - ${prices[20]}
-    ${savoryItems[3]} - ${prices[21]}`);
+    ${savoryItems[0]} - ${savoryItemsPrices[0]}
+    ${savoryItems[1]} - ${savoryItemsPrices[1]}
+    ${savoryItems[2]} - ${savoryItemsPrices[2]}
+    ${savoryItems[3]} - ${savoryItemsPrices[3]}`);
 
 console.log(`\n${productCategory6}:
-    ${piesTarts[0]} - ${prices[22]}
-    ${piesTarts[1]} - ${prices[23]}
-    ${piesTarts[2]} - ${prices[24]}`);
+    ${piesTarts[0]} - ${piesTartsPrices[0]}
+    ${piesTarts[1]} - ${piesTartsPrices[1]}
+    ${piesTarts[2]} - ${piesTartsPrices[2]}`);
 
 console.log(`\n${productCategory7}:
-    ${specialityItems[0]} - ${prices[25]}
-    ${specialityItems[1]} - ${prices[26]}
-    ${specialityItems[2]} - ${prices[27]}
-    ${specialityItems[3]} - ${prices[28]}`);
+    ${specialityItems[0]} - ${specialityItemsPrices[0]}
+    ${specialityItems[1]} - ${specialityItemsPrices[1]}
+    ${specialityItems[2]} - ${specialityItemsPrices[2]}
+    ${specialityItems[3]} - ${specialityItemsPrices[3]}`);
 
 console.log(`\n${productCategory8}:
-    ${beverages[0]} - ${prices[29]}
-    ${beverages[1]} - ${prices[30]}
-    ${beverages[2]} - ${prices[31]}`);
-    
-//Using the push method to add a new product to your store.
-beverages.push("Lemonade");
-prices.push("$2.50");  
+    ${beverages[0]} - ${beveragesPrices[0]}
+    ${beverages[1]} - ${beveragesPrices[1]}
+    ${beverages[2]} - ${beveragesPrices[2]}`);
 
-// Displaying the new product and price:
-console.log(`\nAdded a new product in ${productCategory8}:
-  ${beverages[3]} - ${prices[32]}`);
+// Adding a new product and price to Beverages
+beverages.push("Lemonade");
+beveragesPrices.push("$2.50");
+console.log(`\nWe have added Lemonade to ${productCategory8}:`)
+
+// Displaying the updated Beverages list
+console.log(`\nUpdated ${productCategory8} List:
+    ${beverages[0]} - ${beveragesPrices[0]}
+    ${beverages[1]} - ${beveragesPrices[1]}
+    ${beverages[2]} - ${beveragesPrices[2]}
+    ${beverages[3]} - ${beveragesPrices[3]}`);
+
+// Removing last item from Cookies
+cookies.pop();
+cookiesPrices.pop();
+console.log(`\nUnfortunately, Shortbread in ${productCategory4} is out-of-stock.`);
+
+// Displaying the updated Cookies list
+console.log(`\nUpdated ${productCategory4} List:
+    ${cookies[0]} - ${cookiesPrices[0]}
+    ${cookies[1]} - ${cookiesPrices[1]}
+    ${cookies[2]} - ${cookiesPrices[2]}
+    ${cookies[3]} - ${cookiesPrices[3]}`);
 
 
 
