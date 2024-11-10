@@ -271,13 +271,8 @@ let featuredProducts = piesTarts.slice(0, 3);
 console.log(`\nThis week our featured products are:, ${featuredProducts}`);
 
 // Example of concat: Add new products from a shipment to the store's inventory
-//let breads = ["Artisan Loaves", "Baguettes", "Ciabatta", "Focaccia", "Bagels"];
-//let breadsPrices = [5.00, 3.00, 4.00, 4.50, 1.50];
-
 let newBreadsItems = ["Brioche Loaf", "Garlic Herb Bread"];
 let newBreadsPrices = [5.95, 5.75];
-
-// Concatenate new items and prices to the existing arrays
 breads = breads.concat(newBreadsItems);
 breadsPrices = breadsPrices.concat(newBreadsPrices);
 
