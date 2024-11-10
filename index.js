@@ -240,30 +240,59 @@ console.log(`\n${productCategory8}:
     ${beverages[1]} - ${beveragesPrices[1]}
     ${beverages[2]} - ${beveragesPrices[2]}`);
 
-// Adding a new product and price to Beverages
-beverages.push("Lemonade");
-beveragesPrices.push("$2.50");
-console.log(`\nWe have added Lemonade to ${productCategory8}:`)
+// Adding new products to Beverages
+beverages.push("Lemonade", "Iced Matcha Latte", "Chai Latte");
+beveragesPrices.push("$2.50", "$4.00", "$3.50");
+console.log(`\nWe have added new products to ${productCategory8}:`)
 
 // Displaying the updated Beverages list
 console.log(`\nUpdated ${productCategory8} List:
     ${beverages[0]} - ${beveragesPrices[0]}
     ${beverages[1]} - ${beveragesPrices[1]}
     ${beverages[2]} - ${beveragesPrices[2]}
-    ${beverages[3]} - ${beveragesPrices[3]}`);
+    ${beverages[3]} - ${beveragesPrices[3]}
+    ${beverages[4]} - ${beveragesPrices[4]}
+    ${beverages[5]} - ${beveragesPrices[5]}
+    ${beverages[6]} - ${beveragesPrices[6]}`);
 
 // Removing last item from Cookies
 cookies.pop();
 cookiesPrices.pop();
 console.log(`\nUnfortunately, Shortbread in ${productCategory4} is out-of-stock.`);
-
 // Displaying the updated Cookies list
 console.log(`\nUpdated ${productCategory4} List:
     ${cookies[0]} - ${cookiesPrices[0]}
     ${cookies[1]} - ${cookiesPrices[1]}
     ${cookies[2]} - ${cookiesPrices[2]}
     ${cookies[3]} - ${cookiesPrices[3]}`);
+    
+// Example of slice: Showing a selection of featured products
+let featuredProducts = piesTarts.slice(0, 3);
+console.log(`\nThis week our featured products are:, ${featuredProducts}`);
 
+// Example of concat: Add new products from a shipment to the store's inventory
+//let breads = ["Artisan Loaves", "Baguettes", "Ciabatta", "Focaccia", "Bagels"];
+//let breadsPrices = [5.00, 3.00, 4.00, 4.50, 1.50];
+
+let newBreadsItems = ["Brioche Loaf", "Garlic Herb Bread"];
+let newBreadsPrices = [5.95, 5.75];
+
+// Concatenate new items and prices to the existing arrays
+breads = breads.concat(newBreadsItems);
+breadsPrices = breadsPrices.concat(newBreadsPrices);
+
+console.log(`\nWe have added new breads to our inventory:`);
+console.log(`Breads:
+    ${breads[0]} - $${breadsPrices[0]}
+    ${breads[1]} - $${breadsPrices[1]}
+    ${breads[2]} - $${breadsPrices[2]}
+    ${breads[3]} - $${breadsPrices[3]}
+    ${breads[4]} - $${breadsPrices[4]}
+    ${breads[5]} - $${breadsPrices[5]}
+    ${breads[6]} - $${breadsPrices[6]}`);
+
+    console.log(`\nThanks for visiting ${storeName}`);
+    console.log(`\nHere are our store hours for reference: ${storeHours}`);    
 
 
 
