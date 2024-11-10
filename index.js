@@ -171,7 +171,9 @@ console.log(`\nThe store hours are ${storeHours}.`);
 
 
 //aisd-jse-on-the-job-2
-console.log(`\n\naisd-jse-on-the-job-2`);
+console.log(`\naisd-jse-on-the-job-2`)
+console.log(`\nWelcome to ${storeName}. We are the best ${storeType} in town.`);
+console.log(`\nHere are the products we currently offer:`);
 // Building arrays from the product and price variables:
 let breads = ["Artisan Loaves", "Baguettes", "Ciabatta", "Focaccia", "Bagels"];
 let breadsPrices = ["$5.00", "$3.00", "$4.00", "$4.50", "$1.50"];
