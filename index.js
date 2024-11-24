@@ -128,3 +128,19 @@ const removeProductCategory3 = (cakesCupcakes, prices) => {
     logMessage(`Unfortunately, ${removedCake} is out of stock.`);
     displayCakesCupcakesAndPrices(cakesCupcakes, prices);
 };
+
+// Display featured products (sorted alphabetically)
+const displayFeaturedProducts = (specialityItems, numberOfSpecialityItems) => {
+    // Sort alphabetically
+    const sortedProducts = specialityItems.sort();
+    const featuredProducts = [];
+
+    // Log each item
+    sortedProducts.forEach((specialityItem, index) => {
+        if (index < numberOfSpecialityItems) {
+            featuredProducts.push(specialityItem);
+        }
+      });
+    logMessage(`\nThis week, our featured products are:`);
+    featuredProducts.forEach((specialityItem) => logMessage(specialityItem));
+};
