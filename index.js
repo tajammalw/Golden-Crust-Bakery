@@ -1,5 +1,3 @@
-//aisd-jse-on-the-job-1 (updated)
-console.log(`\naisd-jse-on-the-job-1`);
 //Creating the eCommerce Store Variables.
 // Store Name
 const storeName = "Golden-Crust-Bakery";
@@ -7,10 +5,15 @@ const storeName = "Golden-Crust-Bakery";
 // Store Type
 const storeType = "Bakery";
 
-// Displaying the Store Name and Store Type
-console.log(`\nThe store name is ${storeName}.`);
+//Reusable logging function
+const logMessage = (message) => {
+    console.log(`${message}`);
+};
 
-console.log(`\nThe store type is ${storeType}.`);
+// Function to display store information
+const displayStoreInfo = (name, type) => {
+    logMessage(`\nWelcome to ${name}! We are the best ${type} in town.`);
+};
 
 // Store Location
 const storeLocation = "2115 Wonderland Street, Dream Blvd, Phoenix AZ 34576";
