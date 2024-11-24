@@ -105,3 +105,18 @@ const displayBeveragesAndPrices = (beverages, prices) => {
         logMessage(`${beverage}: ${prices[index]}`);
     });
 };
+
+// Function to add new products category and prices
+const addProductCategory1 = (breads, prices, newBread, newPrice) => {
+    breads.push(newBread);        
+    breadsPrices.push(newPrice);  
+    logMessage(`We've added a new product! ${newBread} for ${newPrice}`);    
+    displayBreadsAndPrices(breads, breadsPrices); 
+};
+
+const addProductCategory4 = (cookies, cookiesPrices, newCookie, newPrice) => {
+    cookies.push(newCookie);        
+    cookiesPrices.push(newPrice);  
+    logMessage(`We've added a new product! ${newCookie} for ${newPrice}`);    
+    displayCookiesAndPrices(cookies, cookiesPrices); 
+}
