@@ -144,3 +144,18 @@ const displayFeaturedProducts = (specialityItems, numberOfSpecialityItems) => {
     logMessage(`\nThis week, our featured products are:`);
     featuredProducts.forEach((specialityItem) => logMessage(specialityItem));
 };
+
+//Sort products and prices by price (low to high)
+const sortInventoryByPrice = (savoryItems, prices) => {
+    // Generate an array of [item, price] pairs and sort by numerical price
+    const sortedItems = savoryItems
+        .map((item, i) => [item, parseFloat(prices[i].replace("$", ""))]) // Convert prices to numbers
+        .sort((a, b) => a[1] - b[1]); // Sort by price
+
+    // Log sorted products
+    logMessage(`\nProducts sorted by price (low to high):`);
+    sortedItems.forEach(([item, price]) => {
+        logMessage(`${item}: $${price.toFixed(2)}`); // Display price as a formatted string
+    });
+};
+
