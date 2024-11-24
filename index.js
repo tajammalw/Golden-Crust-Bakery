@@ -106,7 +106,7 @@ const displayBeveragesAndPrices = (beverages, prices) => {
     });
 };
 
-// Function to add new products category and prices
+// Function to add new products
 const addProductCategory1 = (breads, prices, newBread, newPrice) => {
     breads.push(newBread);        
     breadsPrices.push(newPrice);  
@@ -120,3 +120,11 @@ const addProductCategory4 = (cookies, cookiesPrices, newCookie, newPrice) => {
     logMessage(`We've added a new product! ${newCookie} for ${newPrice}`);    
     displayCookiesAndPrices(cookies, cookiesPrices); 
 }
+
+// Function to remove the last product
+const removeProductCategory3 = (cakesCupcakes, prices) => {
+    const removedCake = cakesCupcakes.pop();
+    const removedPrice = prices.pop();
+    logMessage(`Unfortunately, ${removedCake} is out of stock.`);
+    displayCakesCupcakesAndPrices(cakesCupcakes, prices);
+};
