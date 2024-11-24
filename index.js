@@ -5,15 +5,10 @@ const storeName = "Golden-Crust-Bakery";
 // Store Type
 const storeType = "Bakery";
 
-//Reusable logging function
-const logMessage = (message) => {
-    console.log(`${message}`);
-};
+// Displaying the Store Name and Store Type
+console.log(`\nThe store name is ${storeName}.`);
 
-// Function to display store information
-const displayStoreInfo = (name, type) => {
-    logMessage(`\nWelcome to ${name}! We are the best ${type} in town.`);
-};
+console.log(`\nThe store type is ${storeType}.`);
 
 // Store Location
 const storeLocation = "2115 Wonderland Street, Dream Blvd, Phoenix AZ 34576";
@@ -21,104 +16,38 @@ const storeLocation = "2115 Wonderland Street, Dream Blvd, Phoenix AZ 34576";
 // Store Hours
 const storeHours = "Monday - Friday: 9 AM - 6 PM, Saturday: 10 AM - 4 PM, Sunday: Closed";
 
-
-// Store Products - showing categories and items under each category: 
+// Product we offer:
 const productCategory1 = "Breads";
-const product1 = "Artisan Loaves";
-const product2 = "Baguettes";
-const product3 = "Ciabatta";
-const product4 = "Focaccia";
-const product5 = "Bagels";
+const breads = ["Artisan Loaves", "Baguettes", "Ciabatta", "Focaccia", "Bagels"];
+const breadsPrices = ["$5.00", "$3.00", "$4.00", "$4.50", "$1.50"];
 
 const productCategory2 = "Pastries";
-const product6 = "Croissants";
-const product7 = "Danishes";
-const product8 = "Scones";
-const product9 = "Cinnamon Rolls";
-const product10 = "Turnovers";
+const pastries = ["Croissants", "Danishes", "Scones", "Cinnamon Rolls", "Turnovers"];
+const pastriesPrices = ["$3.00", "$3.50", "$2.75", "$3.25", "$3.00"];
 
 const productCategory3 = "Cakes & Cupcakes";
-const product11 = "Classic Cakes";
-const product12 = "Cupcakes";
-const product13 = "Cheesecakes";
+const cakesCupcakes = ["Classic Cakes", "Cupcakes", "Cheesecakes"];
+const cakesCupcakesPrices = ["$25.00", "$2.50", "$30.00"];
 
 const productCategory4 = "Cookies";
-const product14 = "Chocolate Chip Cookies";
-const product15 = "Oatmeal Raisin Cookies";
-const product16 = "Sugar Cookies";
-const product17 = "Macarons";
-const product18 = "Shortbread";
+const cookies = ["Chocolate Chip Cookies", "Oatmeal Raisin Cookies", "Sugar Cookies", "Macarons", "Shortbread"];
+const cookiesPrices = ["$1.50", "$1.50", "$1.50", "$1.50", "$2.00"];
 
 const productCategory5 = "Savory Items";
-const product19 = "Quiches";
-const product20 = "Savory Scones";
-const product21 = "Puff Pastry Bites";
-const product22 = "Sandwiches";
+const savoryItems = ["Quiches", "Savory Scones", "Puff Pastry Bites", "Sandwiches"];
+const savoryItemsPrices = ["$4.00", "$2.75", "$3.50", "$7.00"];
 
 const productCategory6 = "Pies & Tarts";
-const product23 = "Fruit Pies";
-const product24 = "Cream Pies";
-const product25 = "Tarts";
+const piesTarts = ["Fruit Pies", "Cream Pies", "Tarts"];
+const piesTartsPrices = ["$15.00", "$16.00", "$14.00"];
 
 const productCategory7 = "Speciality Items";
-const product26 = "Eclairs";
-const product27 = "Muffins";
-const product28 = "Brioche";
-const product29 = "Gluten-Free or Vegan Options";
+const specialityItems = ["Eclairs", "Muffins", "Brioche", "Gluten-Free or Vegan Options"];
+const specialityItemsPrices = ["$3.00", "$2.75", "$3.25", "$5.00"];
 
 const productCategory8 = "Beverages";
-const product30 = "Coffee & Espresso";
-const product31 = "Tea";
-const product32 = "Hot Chocolate";
-
-//Product Prices
-//productCategory1:
-const price1 = "$5.00";
-const price2 = "$3.00";
-const price3 = "$4.00";
-const price4 = "$4.50";
-const price5 = "$1.50";
-
-//productCategory2:
-const price6 = "$3.00";
-const price7 = "$3.50";
-const price8 = "$2.75";
-const price9 = "$3.25";
-const price10 = "$3.00";
-
-//productCategory3:
-const price11 = "$25.00";
-const price12 = "$2.50";
-const price13 = "$30.00";
-
-//productCategory4:
-const price14 = "$1.50";
-const price15 = "$1.50";
-const price16 = "$1.50";
-const price17 = "$2.00";
-const price18 = "$1.75";
-
-//productCategory5:   
-const price19 = "$4.00";
-const price20 = "$2.75";
-const price21 = "$3.50";
-const price22 = "$7.00";
-
-//productCategory6:
-const price23 = "$15.00";
-const price24 = "$16.00";
-const price25 = "$14.00";
-
-//productCategory7:
-const price26 = "$3.00";
-const price27 = "$2.75";
-const price28 = "$3.25";
-const price29 = "$5.00";
-
-//productCategory8:
-const price30 = "$3.00";
-const price31 = "$2.50";
-const price32 = "$3.00"; 
+const beverages = ["Coffee & Espresso", "Tea", "Hot Chocolate"];
+const beveragesPrices = ["$3.00", "$2.50", "$3.00"];
 
 
 // Displaying the Products and Prices
