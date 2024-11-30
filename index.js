@@ -27,38 +27,82 @@ const displayLocation = (storeLocation) => {
 // Store Hours
 const storeHours = "Monday - Friday: 9 AM - 6 PM, Saturday: 10 AM - 4 PM, Sunday: Closed";
 
+// Product list as individual objects in a flat array
 // Product we offer:
-const productCategory1 = "Breads";
-const breads = ["Artisan Loaves", "Baguettes", "Ciabatta", "Focaccia", "Bagels"];
-const breadsPrices = ["$5.00", "$3.00", "$4.00", "$4.50", "$1.50"];
-
-const productCategory2 = "Pastries";
-const pastries = ["Croissants", "Danishes", "Scones", "Cinnamon Rolls", "Turnovers"];
-const pastriesPrices = ["$3.00", "$3.50", "$2.75", "$3.25", "$3.00"];
-
-const productCategory3 = "Cakes & Cupcakes";
-const cakesCupcakes = ["Classic Cakes", "Cupcakes", "Cheesecakes"];
-const cakesCupcakesPrices = ["$25.00", "$2.50", "$30.00"];
-
-const productCategory4 = "Cookies";
-const cookies = ["Chocolate Chip Cookies", "Oatmeal Raisin Cookies", "Sugar Cookies", "Macarons", "Shortbread"];
-const cookiesPrices = ["$1.50", "$1.50", "$1.50", "$1.50", "$2.00"];
-
-const productCategory5 = "Savory Items";
-const savoryItems = ["Quiches", "Savory Scones", "Puff Pastry Bites", "Sandwiches"];
-const savoryItemsPrices = ["$4.00", "$2.75", "$3.50", "$7.00"];
-
-const productCategory6 = "Pies & Tarts";
-const piesTarts = ["Fruit Pies", "Cream Pies", "Tarts"];
-const piesTartsPrices = ["$15.00", "$16.00", "$14.00"];
-
-const productCategory7 = "Speciality Items";
-const specialityItems = ["Eclairs", "Muffins", "Brioche", "Gluten-Free or Vegan Options"];
-const specialityItemsPrices = ["$3.00", "$2.75", "$3.25", "$5.00"];
-
-const productCategory8 = "Beverages";
-const beverages = ["Coffee & Espresso", "Tea", "Hot Chocolate"];
-const beveragesPrices = ["$3.00", "$2.50", "$3.00"];
+const products = [
+    {
+        category: "Breads",
+        items: [
+            { name: "Artisan Loaves", price: "$5.00", description: "Freshly baked loaves with a crispy crust and soft interior." },
+            { name: "Baguettes", price: "$3.00", description: "Classic French bread with a golden crust and airy crumb." },
+            { name: "Ciabatta", price: "$4.00", description: "Italian white bread known for its rustic texture and flavor." },
+            { name: "Focaccia", price: "$4.50", description: "Flat Italian bread seasoned with olive oil, herbs, and sea salt." },
+            { name: "Bagels", price: "$1.50", description: "Chewy, dense bread rings available in various flavors." },
+        ],
+    },
+    {
+        category: "Pastries",
+        items: [
+            { name: "Croissants", price: "$3.00", description: "Flaky and buttery French pastry, perfect for breakfast." },
+            { name: "Danishes", price: "$3.50", description: "Sweet pastries filled with fruit, custard, or cream cheese." },
+            { name: "Scones", price: "$2.75", description: "Buttery and crumbly treats, often paired with jam or cream." },
+            { name: "Cinnamon Rolls", price: "$3.25", description: "Soft rolls swirled with cinnamon and topped with icing." },
+            { name: "Turnovers", price: "$3.00", description: "Puff pastry pockets filled with sweet or savory fillings." },
+        ],
+    },
+    {
+        category: "Cakes & Cupcakes",
+        items: [
+            { name: "Classic Cakes", price: "$25.00", description: "Traditional cakes in a variety of flavors and designs." },
+            { name: "Cupcakes", price: "$2.50", description: "Mini cakes topped with delicious frosting." },
+            { name: "Cheesecakes", price: "$30.00", description: "Rich and creamy cakes with a graham cracker crust." },
+        ],
+    },
+    {
+        category: "Cookies",
+        items: [
+            { name: "Chocolate Chip Cookies", price: "$1.50", description: "Classic cookies loaded with chocolate chips." },
+            { name: "Oatmeal Raisin Cookies", price: "$1.50", description: "Chewy cookies with oats and sweet raisins." },
+            { name: "Sugar Cookies", price: "$1.50", description: "Soft, buttery cookies with a sugary glaze." },
+            { name: "Macarons", price: "$1.50", description: "Delicate French cookies with a variety of fillings." },
+            { name: "Shortbread", price: "$2.00", description: "Rich and crumbly cookies made with butter." },
+        ],
+    },
+    {
+        category: "Savory Items",
+        items: [
+            { name: "Quiches", price: "$4.00", description: "Savory pies with a creamy filling of eggs, cheese, and veggies." },
+            { name: "Savory Scones", price: "$2.75", description: "Scones infused with herbs and cheese for a savory twist." },
+            { name: "Puff Pastry Bites", price: "$3.50", description: "Bite-sized puff pastry snacks with savory fillings." },
+            { name: "Sandwiches", price: "$7.00", description: "Freshly made sandwiches with a variety of fillings." },
+        ],
+    },
+    {
+        category: "Pies & Tarts",
+        items: [
+            { name: "Fruit Pies", price: "$15.00", description: "Pies filled with fresh, seasonal fruits." },
+            { name: "Cream Pies", price: "$16.00", description: "Rich pies with a creamy custard filling." },
+            { name: "Tarts", price: "$14.00", description: "Elegant pastries with a buttery crust and rich filling." },
+        ],
+    },
+    {
+        category: "Speciality Items",
+        items: [
+            { name: "Eclairs", price: "$3.00", description: "Choux pastry filled with cream and topped with chocolate." },
+            { name: "Muffins", price: "$2.75", description: "Moist, fluffy muffins available in various flavors." },
+            { name: "Brioche", price: "$3.25", description: "Rich and soft bread with a hint of sweetness." },
+            { name: "Gluten-Free or Vegan Options", price: "$5.00", description: "Delicious baked goods for dietary preferences." },
+        ],
+    },
+    {
+        category: "Beverages",
+        items: [
+            { name: "Coffee & Espresso", price: "$3.00", description: "Freshly brewed coffee and rich espresso drinks." },
+            { name: "Tea", price: "$2.50", description: "Selection of herbal, green, and black teas." },
+            { name: "Hot Chocolate", price: "$3.00", description: "Rich and creamy chocolate drink." },
+        ],
+    },
+];
 
 // Function to display productCategory1
 const displayBreadsAndPrices = (breads, prices) => {
