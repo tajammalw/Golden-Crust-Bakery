@@ -115,126 +115,45 @@ const displayAllProducts = (products) => {
     });
 };
 
-
-
-
-
-
-
-// Function to display productCategory1
-const displayBreadsAndPrices = (breads, prices) => {
-    
-    breads.forEach((bread, index) => {
-        logMessage(`${bread}: ${prices[index]}`);
-    });
-};
-
-// Function to display productCategory2
-const displayPastriesAndPrices = (pastries, prices) => {
-    pastries.forEach((pastry, index) => {
-        logMessage(`${pastry}: ${prices[index]}`);
-    });
-}
-
-// Function to display productCategory3
-const displayCakesCupcakesAndPrices = (cakesCupcakes, prices) => {
-    cakesCupcakes.forEach((cake, index) => {
-        logMessage(`${cake}: ${prices[index]}`);
-    });
-}
-
-//Function to display productCategory4
-const displayCookiesAndPrices = (cookies, prices) => {
-    cookies.forEach((cookie, index) => {
-        logMessage(`${cookie}: ${prices[index]}`);
-    });
-};
-
-//Function to display productCategory5
-const displaySavoryItemsAndPrices = (savoryItems, prices) => {
-    savoryItems.forEach((item, index) => {
-        logMessage(`${item}: ${prices[index]}`);
-    });
-};
-
-//Function to display productCategory6
-const displayPiesTartsAndPrices = (piesTarts, prices) => {
-    piesTarts.forEach((pie, index) => {
-        logMessage(`${pie}: ${prices[index]}`);
-    });
-};
-
-//Function to display productCategory7
-const displaySpecialityItemsAndPrices = (specialityItems, prices) => {
-    specialityItems.forEach((item, index) => {
-        logMessage(`${item}: ${prices[index]}`);
-    });
-};
-
-//Function to display productCategory8
-const displayBeveragesAndPrices = (beverages, prices) => {
-    beverages.forEach((beverage, index) => {
-        logMessage(`${beverage}: ${prices[index]}`);
-    });
-};
-
 // Function to add new products
-const addProductCategory1 = (breads, prices, newBread, newPrice) => {
-    breads.push(newBread);        
-    breadsPrices.push(newPrice);  
-    logMessage(`We've added a new product! ${newBread} for ${newPrice}`);    
-    displayBreadsAndPrices(breads, breadsPrices); 
-};
-
-const addProductCategory4 = (cookies, cookiesPrices, newCookie, newPrice) => {
-    cookies.push(newCookie);        
-    cookiesPrices.push(newPrice);  
-    logMessage(`We've added a new product! ${newCookie} for ${newPrice}`);    
-    displayCookiesAndPrices(cookies, cookiesPrices); 
+const addNewProduct = (category, name, price, description) => {
+    const newProduct = { name, price, description };
+    const categoryIndex = products.findIndex(item => item.category === category);
+    products[categoryIndex].items.push(newProduct);
+    logMessage(`\nNew product added to ${category}: ${name} - ${price}`);
 }
 
-// Function to remove the last product
-const removeProductCategory3 = (cakesCupcakes, prices) => {
-    const removedCake = cakesCupcakes.pop();
-    const removedPrice = prices.pop();
-    logMessage(`Unfortunately, ${removedCake} is out of stock.`);
-    displayCakesCupcakesAndPrices(cakesCupcakes, prices);
-};
 
-// Display featured products (sorted alphabetically)
-const displayFeaturedProducts = (specialityItems, numberOfSpecialityItems) => {
-    // Sort alphabetically
-    const sortedProducts = specialityItems.sort();
-    const featuredProducts = [];
 
-    // Log each item
-    sortedProducts.forEach((specialityItem, index) => {
-        if (index < numberOfSpecialityItems) {
-            featuredProducts.push(specialityItem);
-        }
-      });
-    logMessage(`\nThis week, our featured products are:`);
-    featuredProducts.forEach((specialityItem) => logMessage(specialityItem));
-};
 
-//Sort products and prices by price (low to high)
-const sortInventoryByPrice = (savoryItems, prices) => {
-    // Generate an array of [item, price] pairs and sort by numerical price
-    const sortedItems = savoryItems
-        .map((item, i) => [item, parseFloat(prices[i].replace("$", ""))]) // Convert prices to numbers
-        .sort((a, b) => a[1] - b[1]); // Sort by price
 
-    // Log sorted products
-    logMessage(`\nProducts sorted by price (low to high):`);
-    sortedItems.forEach(([item, price]) => {
-        logMessage(`${item}: ${price.toFixed(2)}`); // Display price as a formatted string
-    });
-};
 
-//Calling the functions:
+
+
+
+// Calling the functions:
+// Display store information
+displayStoreInfo(storeName, storeType);
+
+// Display store location
+displayLocation(storeLocation);
+
+// Display all products
+displayAllProducts(products);
+
+// Display the new products
+addNewProduct("Breads", "Garlic Herb Bread", "$5.75", "Freshly baked bread with a savory garlic and herb flavor.");
+
+addNewProduct("Pastries", "Palmiers", "$2.00", "Crispy, caramelized puff pastry cookies.");
+
+
+
+
+
+
 
 //Call the displayStoreInfo() function to show the store's name and type.
-displayStoreInfo(storeName, storeType);
+/*displayStoreInfo(storeName, storeType);
 
 // Show the current products and their prices in the store.
 logMessage(`\nHere are the products we currently offer:`);
@@ -293,4 +212,4 @@ displayLocation(`\n${storeLocation}`);
 
 //Use logMessage() to print a closing message thanking visitors and displaying the store hours.
 logMessage(`\nThanks for visiting ${storeName}`);
-logMessage(`\nHere are our store hours for reference: ${storeHours}`);
+logMessage(`\nHere are our store hours for reference: ${storeHours}`); */
