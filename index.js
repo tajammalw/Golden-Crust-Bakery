@@ -1,33 +1,32 @@
-//Creating the eCommerce Store Variables.
-// Store Name
+//Creating the eCommerce Store Variables:
+// Store Name:
 const storeName = "Golden-Crust-Bakery";
 
-// Store Type
+// Store Type:
 const storeType = "Bakery";
 
-//Reusable logging function
+//Reusable logging function:
 const logMessage = (message) => {
     console.log(`${message}`);
 };
 
-
-// Function to display store information
+// Function to display store information:
 const displayStoreInfo = (name, type) => {
     logMessage(`\nWelcome to ${name}! We are the best ${type} in town.`);
 };
 
-// Store Location
+// Store Location:
 const storeLocation = "2115 Wonderland Street, Dream Blvd, Phoenix AZ 34576";
 
-// Function to display store location
+// Function to display store location:
 const displayLocation = (storeLocation) => {
     logMessage(`\nWe are located at: ${storeLocation}`);
 };
 
-// Store Hours
+// Store Hours:
 const storeHours = "Monday - Friday: 9 AM - 6 PM, Saturday: 10 AM - 4 PM, Sunday: Closed";
 
-// Product list as individual objects in a flat array
+// Product list as individual objects in a flat array:
 // Product we offer:
 const products = [
     {
@@ -104,7 +103,7 @@ const products = [
     },
 ];
 
-// Function to display all products and their details
+// Function to display Products Categories, Items, and Prices:
 const displayAllProducts = (products) => {
     logMessage(`\nHere are the products we currently offer:`);
     products.forEach(category => {
@@ -115,13 +114,40 @@ const displayAllProducts = (products) => {
     });
 };
 
-// Function to add new products
+// Function to add new items to a category:
 const addNewProduct = (category, name, price, description) => {
     const newProduct = { name, price, description };
     const categoryIndex = products.findIndex(item => item.category === category);
     products[categoryIndex].items.push(newProduct);
     logMessage(`\nNew product added to ${category}: ${name} - ${price}`);
-}
+};
+
+// Function to remove the last item from a category:
+const removedLastItem = (products) => {
+    // Find the "Pies & Tarts" category
+    const piesAndTartsCategory = products.find(category => category.category === "Pies & Tarts");
+    const removedItem = piesAndTartsCategory.items.pop();
+    logMessage(`\nUnfortunately, ${removedItem.name} is out of stock.`);
+};
+
+// Function to display featured products from a specific category sorted alphabetically:
+const displayFeaturedProducts = (products, categoryName, numberOfItems) => {
+    // Find the category matching the provided name
+    const category = products.find(cat => cat.category === categoryName);
+
+    // Extract and sort product names from the selected category
+    const sortedProducts = category.items
+        .map(item => item.name)
+        .sort();
+
+    // Display the top N featured products
+    logMessage(`\nThis week's featured products (${categoryName}):`);
+    sortedProducts.slice(0, numberOfItems).forEach(item => logMessage(item));
+};
+
+
+
+
 
 
 
@@ -146,7 +172,11 @@ addNewProduct("Breads", "Garlic Herb Bread", "$5.75", "Freshly baked bread with 
 
 addNewProduct("Pastries", "Palmiers", "$2.00", "Crispy, caramelized puff pastry cookies.");
 
+// Display the last item removed from a category
+removedLastItem(products);
 
+// Display featured products (Top 3) in a category
+displayFeaturedProducts(products, "Speciality Items", 3);
 
 
 
