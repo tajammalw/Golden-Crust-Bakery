@@ -104,6 +104,23 @@ const products = [
     },
 ];
 
+// Function to display all products and their details
+const displayAllProducts = (products) => {
+    logMessage(`\nHere are the products we currently offer:`);
+    products.forEach(category => {
+        logMessage(`\n${category.category}:`); // Log the category name
+        category.items.forEach(item => {
+            logMessage(`${item.name} - ${item.price}: ${item.description}`); // Log each item's details
+        });
+    });
+};
+
+
+
+
+
+
+
 // Function to display productCategory1
 const displayBreadsAndPrices = (breads, prices) => {
     
