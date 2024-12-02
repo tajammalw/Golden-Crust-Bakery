@@ -102,7 +102,6 @@ const products = [
         ],
     },
 ];
-
 // Function to display Products Categories, Items, and Prices:
 const displayAllProducts = (products) => {
     logMessage(`\nHere are the products we currently offer:`);
@@ -113,7 +112,6 @@ const displayAllProducts = (products) => {
         });
     });
 };
-
 // Function to add new items to a category:
 const addNewProduct = (category, name, price, description) => {
     const newProduct = { name, price, description };
@@ -124,7 +122,7 @@ const addNewProduct = (category, name, price, description) => {
 
 // Function to remove the last item from a category:
 const removedLastItem = (products) => {
-    // Find the "Pies & Tarts" category
+    // Find the "Pies & Tarts" category:
     const piesAndTartsCategory = products.find(category => category.category === "Pies & Tarts");
     const removedItem = piesAndTartsCategory.items.pop();
     logMessage(`\nUnfortunately, ${removedItem.name} is out of stock.`);
@@ -134,28 +132,31 @@ const removedLastItem = (products) => {
 const displayFeaturedProducts = (products, categoryName, numberOfItems) => {
     // Find the category matching the provided name
     const category = products.find(cat => cat.category === categoryName);
-
     // Extract and sort product names from the selected category
     const sortedProducts = category.items
         .map(item => item.name)
         .sort();
-
-    // Display the top N featured products
+    // Display the top N featured products:
     logMessage(`\nThis week's featured products (${categoryName}):`);
     sortedProducts.slice(0, numberOfItems).forEach(item => logMessage(item));
 };
+// Function to sort products by price (low to high) for a specific category:
+const sortProductsByPrice = (products, category) => {
+    // Find the category in the products list
+    const categoryData = products.find((cat) => cat.category === category);
 
-
-
-
-
-
-
-
-
-
-
-
+    // Sort items in the category by numeric price:
+    const sortedProducts = [...categoryData.items].sort((a, b) => {
+        const priceA = parseFloat(a.price.replace("$", ""));
+        const priceB = parseFloat(b.price.replace("$", ""));
+        return priceA - priceB;
+    });
+    // Log sorted products
+    logMessage(`\nProducts in category "${category}" sorted by price (low to high):`);
+    sortedProducts.forEach((product) => {
+        logMessage(`${product.name}: ${product.price} - ${product.description}`);
+    });
+};
 
 // Calling the functions:
 // Display store information
@@ -164,82 +165,28 @@ displayStoreInfo(storeName, storeType);
 // Display store location
 displayLocation(storeLocation);
 
-// Display all products
+// Display Products Categories, Items, and Prices:
 displayAllProducts(products);
 
-// Display the new products
+// Display the new items added to a category:
 addNewProduct("Breads", "Garlic Herb Bread", "$5.75", "Freshly baked bread with a savory garlic and herb flavor.");
 
 addNewProduct("Pastries", "Palmiers", "$2.00", "Crispy, caramelized puff pastry cookies.");
 
-// Display the last item removed from a category
+// Display the last item removed from a category:
 removedLastItem(products);
 
-// Display featured products (Top 3) in a category
+// Display featured products (Top 3) in a category sorted alphabetically:
 displayFeaturedProducts(products, "Speciality Items", 3);
 
-
-
-
-
-//Call the displayStoreInfo() function to show the store's name and type.
-/*displayStoreInfo(storeName, storeType);
-
-// Show the current products and their prices in the store.
-logMessage(`\nHere are the products we currently offer:`);
-logMessage(`\n${productCategory1}:`);
-// Display productCategory1(Breads)
-displayBreadsAndPrices(breads, breadsPrices);
-
-// Display productCategory2(pastries)
-console.log(`\n${productCategory2}:`);
-displayPastriesAndPrices(pastries, pastriesPrices);
-
-// Display productCategory3(CakesCupcakes)
-console.log(`\n${productCategory3}:`);
-displayCakesCupcakesAndPrices(cakesCupcakes, cakesCupcakesPrices);
-
-//Display productCategory4(Cookies)
-console.log(`\n${productCategory4}:`);
-displayCookiesAndPrices(cookies, cookiesPrices);
-
-//Display productCategory5(SavoryItems)
-console.log(`\n${productCategory5}:`);
-displaySavoryItemsAndPrices(savoryItems, savoryItemsPrices);
-
-//Display productCategory6(PiesTarts)
-console.log(`\n${productCategory6}:`);
-displayPiesTartsAndPrices(piesTarts, piesTartsPrices);
-
-//Display productCategory7(SpecialityItems)
-console.log(`\n${productCategory7}:`);
-displaySpecialityItemsAndPrices(specialityItems, specialityItemsPrices);
-
-//Display productCategory8(Beverages)
-console.log(`\n${productCategory8}:`);
-displayBeveragesAndPrices(beverages, beveragesPrices);
-
-// Call the addProduct() function to add a new product and display the updated productCategory1(Breads):
-console.log(`\nBreads`);
-addProductCategory1(breads, breadsPrices, "Garlic Herb Bread", "$5.75");  
-
-// Call the addProduct() function to add a new product and display the updated productCategory4(Cookies):
-console.log(`\nCookies`);
-addProductCategory4(cookies, cookiesPrices, "Lemon Shortbread", "$2.50");
-
-// Call the removeLastProduct() function to remove the last product and display the updated productCategory3(CakesCupcakes):
-console.log(`\nCakes & Cupcakes`);
-removeProductCategory3(cakesCupcakes, cakesCupcakesPrices);
-
-//Call the displayFeaturedProducts() function to show a selection of featured products.
-displayFeaturedProducts(specialityItems, 2);
-
-//Call the sortInventoryByPrice() function to sort the products and prices in ascending order and display them.
-sortInventoryByPrice(savoryItems, savoryItemsPrices);
-
-//Display store location:
-displayLocation(`\n${storeLocation}`);
+// Display items sorted by price (low to high) in a category:
+sortProductsByPrice(products, "Pastries");
 
 //Use logMessage() to print a closing message thanking visitors and displaying the store hours.
 logMessage(`\nThanks for visiting ${storeName}`);
-logMessage(`\nHere are our store hours for reference: ${storeHours}`); */
+logMessage(`\nHere are our store hours for reference: ${storeHours}`);
+
+
+
+
+
